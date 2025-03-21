@@ -10,7 +10,7 @@ DATABRICKS_SERVER = os.getenv("DATABRICKS_SERVER")
 DATABRICKS_HTTP_PATH = os.getenv("DATABRICKS_HTTP_PATH")
 
 # Nombre de la tabla en el Unity Catalog
-TABLE_NAME = "brz_dev.dbdemos.colombian_temperature_data"
+TABLE_NAME = "hive_metastore.default.temperature_data"
 
 def execute_query(query: str) -> pd.DataFrame:
     """
